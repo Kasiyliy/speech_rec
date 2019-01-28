@@ -6,6 +6,8 @@ import edu.cmu.sphinx.api.StreamSpeechRecognizer;
 import edu.cmu.sphinx.decoder.adaptation.Stats;
 import edu.cmu.sphinx.decoder.adaptation.Transform;
 import edu.cmu.sphinx.result.WordResult;
+import org.springframework.boot.system.ApplicationHome;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -23,19 +25,34 @@ public class RecognizerService {
 
     public String recognize(MultipartFile file) throws Exception {
         System.out.println("Loading models...");
+        ApplicationHome home = new ApplicationHome(this.getClass());
+        File jarDir = home.getDir();
 
         Configuration configuration = new Configuration();
-
-
         configuration
                 .setAcousticModelPath("src/main/resources/cmusphinx-kz-5.2/model_parameters/kz.cd_cont_200");
+//        configuration
+//                .setAcousticModelPath("resources/cmusphinx-kz-5.2/model_parameters/kz.cd_cont_200");
         configuration
                 .setDictionaryPath("src/main/resources/cmusphinx-kz-5.2/etc/kz.dic");
+//        configuration
+//                .setAcousticModelPath("resources/cmusphinx-kz-5.2/etc/kz.dic");
         configuration
                 .setLanguageModelPath("src/main/resources/cmusphinx-kz-5.2/etc/kz.ug.lm");
+//        configuration
+//                .setAcousticModelPath("resources/cmusphinx-kz-5.2/etc/kz.ug.lm");
 
-        StreamSpeechRecognizer recognizer = new StreamSpeechRecognizer(
-                configuration);
+
+//        File classPathFile = new ClassPathResource("cmusphinx-kz-5.2/model_parameters/kz.cd_cont_200").getFile();
+//        configuration.setAcousticModelPath(classPathFile.getAbsolutePath());
+//
+//        classPathFile = new ClassPathResource("cmusphinx-kz-5.2/etc/kz.dic").getFile();
+//        configuration.setAcousticModelPath(classPathFile.getAbsolutePath());
+//
+//        classPathFile = new ClassPathResource("cmusphinx-kz-5.2/etc/kz.ug.lm").getFile();
+//        configuration.setAcousticModelPath(classPathFile.getAbsolutePath());
+
+        StreamSpeechRecognizer recognizer = new StreamSpeechRecognizer(configuration);
         InputStream stream = file.getInputStream();
         stream.skip(44);
 

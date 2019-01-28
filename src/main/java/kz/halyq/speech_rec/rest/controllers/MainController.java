@@ -23,6 +23,7 @@ public class MainController {
     @Autowired
     private RecognizerService recognizerService;
 
+
     @PostMapping("/uploadFile")
     public String uploadFile(@RequestParam("file") MultipartFile file) {
         String files = file.getContentType();
@@ -34,6 +35,10 @@ public class MainController {
             result += recognizerService.recognize(file);
         }catch (Exception e){
             e.printStackTrace();
+        }
+
+        if(result.length()==0){
+            result+="{\"message\" : \"not recognized\"  ,\"error\" : true }";
         }
         return  result;
     }
