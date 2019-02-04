@@ -38,7 +38,11 @@ public class MainController {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return result;
+
+        if(result.length()==0){
+            result+="{\"message\" : \"not recognized\"  ,\"error\" : true }";
+        }
+        return  result;
     }
 
     @PostMapping("set_questions")

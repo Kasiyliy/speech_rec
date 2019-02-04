@@ -6,7 +6,10 @@ import edu.cmu.sphinx.api.StreamSpeechRecognizer;
 import edu.cmu.sphinx.decoder.adaptation.Stats;
 import edu.cmu.sphinx.decoder.adaptation.Transform;
 import edu.cmu.sphinx.result.WordResult;
+import org.springframework.boot.system.ApplicationHome;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
+import org.springframework.util.ResourceUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
@@ -23,59 +26,22 @@ public class RecognizerService {
 
     public String recognize(MultipartFile file) throws Exception {
         System.out.println("Loading models...");
-
+        ApplicationHome home = new ApplicationHome(this.getClass());
         Configuration configuration = new Configuration();
-
-
+        File checkFile = ResourceUtils.getFile( "classpath:cmusphinx-kz-5.2/model_parameters/kz.cd_cont_200" ).getAbsoluteFile();
         configuration
-                .setAcousticModelPath("src/main/resources/cmusphinx-kz-5.2/model_parameters/kz.cd_cont_200");
+                .setAcousticModelPath(checkFile.getAbsolutePath());
+        checkFile = ResourceUtils.getFile( "classpath:cmusphinx-kz-5.2/etc/kz.dic" ).getAbsoluteFile();
         configuration
-                .setDictionaryPath("src/main/resources/cmusphinx-kz-5.2/etc/kz.dic");
+                .setDictionaryPath(checkFile.getAbsolutePath());
+        checkFile = ResourceUtils.getFile( "classpath:cmusphinx-kz-5.2/etc/kz.ug.lm" ).getAbsoluteFile();
         configuration
-                .setLanguageModelPath("src/main/resources/cmusphinx-kz-5.2/etc/kz.ug.lm");
-
-        StreamSpeechRecognizer recognizer = new StreamSpeechRecognizer(
-                configuration);
-        InputStream stream = file.getInputStream();
-        stream.skip(44);
-
-
-        recognizer.startRecognition(stream);
+                .setLanguageModelPath(checkFile.getAbsolutePath());
+        StreamSpeechRecognizer recognizer = new StreamSpeechRecognizer(configuration);
         SpeechResult result;
-        while ((result = recognizer.getResult()) != null) {
-
-            System.out.format("Hypothesis: %s\n", result.getHypothesis());
-
-            System.out.println("List of recognized words and their times:");
-            for (WordResult r : result.getWords()) {
-                System.out.println(r);
-            }
-
-            System.out.println("Best 3 hypothesis:");
-            for (String s : result.getNbest(3))
-                System.out.println(s);
-
-        }
-        recognizer.stopRecognition();
-
-
-        stream = file.getInputStream();
-        stream.skip(44);
-
-        Stats stats = recognizer.createStats(1);
+        InputStream stream = file.getInputStream();
         recognizer.startRecognition(stream);
-        while ((result = recognizer.getResult()) != null) {
-            stats.collect(result);
-        }
-        recognizer.stopRecognition();
-
-        Transform transform = stats.createTransform();
-        recognizer.setTransform(transform);
-
-        // Decode again with updated transform
-        stream = file.getInputStream();
         stream.skip(44);
-        recognizer.startRecognition(stream);
         String sentences = "";
         while ((result = recognizer.getResult()) != null) {
             sentences += result.getHypothesis();
