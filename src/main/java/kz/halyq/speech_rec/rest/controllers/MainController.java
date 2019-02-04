@@ -46,16 +46,12 @@ public class MainController {
     }
 
     @PostMapping("set_questions")
-    public String setQuestions(String data) {
+    public String setQuestions(@RequestParam("code") String code,@RequestParam("answer") String answer,
+                               @RequestParam("points") Integer points) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/speech",
                     "root", "sbeezzs02");
-
-            JSONObject jsonData = new JSONObject(data);
-            String code = jsonData.get("code").toString();
-            String answer = jsonData.get("answer").toString();
-            int points = Integer.parseInt(jsonData.get("points").toString());
 
             String sql = "insert into questions (code, answer, points)\n" +
                     "values (?, ?, ?)";

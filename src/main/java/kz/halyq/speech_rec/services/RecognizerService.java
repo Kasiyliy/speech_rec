@@ -3,17 +3,12 @@ package kz.halyq.speech_rec.services;
 import edu.cmu.sphinx.api.Configuration;
 import edu.cmu.sphinx.api.SpeechResult;
 import edu.cmu.sphinx.api.StreamSpeechRecognizer;
-import edu.cmu.sphinx.decoder.adaptation.Stats;
-import edu.cmu.sphinx.decoder.adaptation.Transform;
-import edu.cmu.sphinx.result.WordResult;
 import org.springframework.boot.system.ApplicationHome;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ResourceUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.InputStream;
 
 /**
@@ -28,13 +23,13 @@ public class RecognizerService {
         System.out.println("Loading models...");
         ApplicationHome home = new ApplicationHome(this.getClass());
         Configuration configuration = new Configuration();
-        File checkFile = ResourceUtils.getFile( "classpath:cmusphinx-kz-5.2/model_parameters/kz.cd_cont_200" ).getAbsoluteFile();
+        File checkFile = ResourceUtils.getFile("classpath:cmusphinx-kz-5.2/model_parameters/kz.cd_cont_200").getAbsoluteFile();
         configuration
                 .setAcousticModelPath(checkFile.getAbsolutePath());
-        checkFile = ResourceUtils.getFile( "classpath:cmusphinx-kz-5.2/etc/kz.dic" ).getAbsoluteFile();
+        checkFile = ResourceUtils.getFile("classpath:cmusphinx-kz-5.2/etc/kz.dic").getAbsoluteFile();
         configuration
                 .setDictionaryPath(checkFile.getAbsolutePath());
-        checkFile = ResourceUtils.getFile( "classpath:cmusphinx-kz-5.2/etc/kz.ug.lm" ).getAbsoluteFile();
+        checkFile = ResourceUtils.getFile("classpath:cmusphinx-kz-5.2/etc/kz.ug.lm").getAbsoluteFile();
         configuration
                 .setLanguageModelPath(checkFile.getAbsolutePath());
         StreamSpeechRecognizer recognizer = new StreamSpeechRecognizer(configuration);
