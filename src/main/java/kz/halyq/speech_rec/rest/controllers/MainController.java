@@ -45,6 +45,13 @@ public class MainController {
         return  result;
     }
 
+    @PostMapping("/verify")
+    public String verify(@RequestParam(value = "q_id") Long qId, @RequestParam(value = "number") Long number){
+        String result = "";
+        result+="{\"message\" : \"start to recognize\"  ,\"error\" : false }";
+        return  result;
+    }
+
     @PostMapping("set_questions")
     public String setQuestions(@RequestParam("code") String code,@RequestParam("answer") String answer,
                                @RequestParam("points") Integer points) {
