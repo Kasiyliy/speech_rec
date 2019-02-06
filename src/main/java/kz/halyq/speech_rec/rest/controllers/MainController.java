@@ -1,8 +1,12 @@
 package kz.halyq.speech_rec.rest.controllers;
 
+import kz.halyq.speech_rec.models.Questions;
+import kz.halyq.speech_rec.services.QuestionService;
 import kz.halyq.speech_rec.services.RecognizerService;
-import org.json.JSONObject;
+import kz.halyq.speech_rec.utils.MessageUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -22,6 +26,9 @@ import java.sql.PreparedStatement;
 @RequestMapping("api")
 public class MainController {
     private static String MIME_TYPE = "audio/wave";
+
+    @Autowired
+    private QuestionService questionService;
 
     @Autowired
     private RecognizerService recognizerService;
@@ -50,6 +57,15 @@ public class MainController {
         String result = "";
         result+="{\"message\" : \"start to recognize\"  ,\"error\" : false }";
         return  result;
+    }
+
+    @PostMapping("/questions/by/code")
+    public ResponseEntity getByCode(@RequestParam(value = "q_code") String qCode){
+        Questions  question = questionService.getByCode(qCode);
+        if (question == null) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(MessageUtils.getMessageJSON(HttpStatus.NOT_FOUND.getReasonPhrase()));
+        }
+        return ResponseEntity.status(HttpStatus.FOUND).body(question);
     }
 
     @PostMapping("set_questions")
