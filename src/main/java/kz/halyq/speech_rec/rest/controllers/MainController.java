@@ -52,6 +52,34 @@ public class MainController {
         return  result;
     }
 
+    @PostMapping("/recognize")
+    public String recognize(@RequestParam("file") MultipartFile file ,@RequestParam(value = "q_code") String qCode) {
+        String files = file.getContentType();
+        if (!files.equals(MIME_TYPE)) {
+            return "{ \"message\" : \"mime type error\" , \"error\" : true  }";
+        }
+        String result = "";
+        try {
+            result += recognizerService.recognize(file);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        if(result.length()==0){
+            result+="{\"message\" : \"not recognized\"  ,\"error\" : true }";
+        }else{
+            Questions  question = questionService.getByCode(qCode);
+            if(question.getAnswer().equalsIgnoreCase(result)){
+                result+="{\"message\" : \"recognized\"  ,\"error\" : false, \"points\" : "+question.getPoints()+" }";
+            }else{
+                result+="{\"message\" : \"fail\"  ,\"error\" : false, \"points\" : "+0+" }";
+            }
+        }
+
+
+        return  result;
+    }
+
     @PostMapping("/verify")
     public String verify(@RequestParam(value = "q_id") Long qId, @RequestParam(value = "number") Long number){
         String result = "";
