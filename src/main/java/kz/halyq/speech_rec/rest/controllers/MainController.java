@@ -46,14 +46,14 @@ public class MainController {
             e.printStackTrace();
         }
 
-        if(result.length()==0){
-            result+="{\"message\" : \"not recognized\"  ,\"error\" : true }";
+        if (result.length() == 0) {
+            result += "{\"message\" : \"not recognized\"  ,\"error\" : true }";
         }
-        return  result;
+        return result;
     }
 
     @PostMapping("/recognize")
-    public String recognize(@RequestParam("file") MultipartFile file ,@RequestParam(value = "q_code") String qCode) {
+    public String recognize(@RequestParam("file") MultipartFile file, @RequestParam(value = "q_code") String qCode) {
         String files = file.getContentType();
         if (!files.equals(MIME_TYPE)) {
             return "{ \"message\" : \"mime type error\" , \"error\" : true  }";
@@ -65,31 +65,31 @@ public class MainController {
             e.printStackTrace();
         }
 
-        if(result.length()==0){
-            result+="{\"message\" : \"not recognized\"  ,\"error\" : true }";
-        }else{
-            Questions  question = questionService.getByCode(qCode);
-            if(question.getAnswer().equalsIgnoreCase(result)){
-                result+="{\"message\" : \"recognized\"  ,\"error\" : false, \"points\" : "+question.getPoints()+" }";
-            }else{
-                result+="{\"message\" : \"fail\"  ,\"error\" : false, \"points\" : "+0+" }";
+        if (result.length() == 0) {
+            result += "{\"message\" : \"not recognized\"  ,\"error\" : true }";
+        } else {
+            Questions question = questionService.getByCode(qCode);
+            if (question.getAnswer().equalsIgnoreCase(result)) {
+                result += "{\"message\" : \"recognized\"  ,\"error\" : false, \"points\" : " + question.getPoints() + " }";
+            } else {
+                result += "{\"message\" : \"fail\"  ,\"error\" : false, \"points\" : " + 0 + " }";
             }
         }
 
 
-        return  result;
+        return result;
     }
 
     @PostMapping("/verify")
-    public String verify(@RequestParam(value = "q_id") Long qId, @RequestParam(value = "number") Long number){
+    public String verify(@RequestParam(value = "q_id") Long qId, @RequestParam(value = "number") Long number) {
         String result = "";
-        result+="{\"message\" : \"start to recognize\"  ,\"error\" : false }";
-        return  result;
+        result += "{\"message\" : \"start to recognize\"  ,\"error\" : false }";
+        return result;
     }
 
     @PostMapping("/questions/by/code")
-    public ResponseEntity getByCode(@RequestParam(value = "q_code") String qCode){
-        Questions  question = questionService.getByCode(qCode);
+    public ResponseEntity getByCode(@RequestParam(value = "q_code") String qCode) {
+        Questions question = questionService.getByCode(qCode);
         if (question == null) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(MessageUtils.getMessageJSON(HttpStatus.NOT_FOUND.getReasonPhrase()));
         }
@@ -97,7 +97,7 @@ public class MainController {
     }
 
     @PostMapping("set_questions")
-    public String setQuestions(@RequestParam("code") String code,@RequestParam("answer") String answer,
+    public String setQuestions(@RequestParam("code") String code, @RequestParam("answer") String answer,
                                @RequestParam("points") Integer points) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
