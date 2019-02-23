@@ -8,6 +8,9 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
+import java.lang.reflect.Field;
+import java.nio.charset.Charset;
+
 
 @SpringBootApplication
 @ComponentScan
@@ -18,7 +21,11 @@ extends SpringBootServletInitializer
 {
 
 	public static void main(String[] args) throws Exception{
-		SpringApplication.run(SpeechRecApplication.class, args);
+        System.setProperty("file.encoding","UTF-8");
+        Field charset = Charset.class.getDeclaredField("defaultCharset");
+        charset.setAccessible(true);
+        charset.set(null,null);
+        SpringApplication.run(SpeechRecApplication.class, args);
 	}
 
     @Override

@@ -23,13 +23,13 @@ public class RecognizerService {
         System.out.println("Loading models...");
         ApplicationHome home = new ApplicationHome(this.getClass());
         Configuration configuration = new Configuration();
-        File checkFile = ResourceUtils.getFile("classpath:cmusphinx-kz-5.2/model_parameters/kz.cd_cont_200").getAbsoluteFile();
+        File checkFile = ResourceUtils.getFile("classpath:kz_model/model_parameters/kz_model.ci_cont").getAbsoluteFile();
         configuration
                 .setAcousticModelPath(checkFile.getAbsolutePath());
-        checkFile = ResourceUtils.getFile("classpath:cmusphinx-kz-5.2/etc/kz.dic").getAbsoluteFile();
+        checkFile = ResourceUtils.getFile("classpath:kz_model/etc/kz_model.dic").getAbsoluteFile();
         configuration
                 .setDictionaryPath(checkFile.getAbsolutePath());
-        checkFile = ResourceUtils.getFile("classpath:cmusphinx-kz-5.2/etc/kz.ug.lm").getAbsoluteFile();
+        checkFile = ResourceUtils.getFile("classpath:kz_model/etc/kz_model.lm").getAbsoluteFile();
         configuration
                 .setLanguageModelPath(checkFile.getAbsolutePath());
         StreamSpeechRecognizer recognizer = new StreamSpeechRecognizer(configuration);

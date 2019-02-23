@@ -1,0 +1,37 @@
+Current configuration:
+[NAME]		[DEFLT]	[VALUE]
+-accumdir		/Users/air/Desktop/my_models/kz_model/bwaccumdir/kz_model_buff_1,
+-constE		3.0	3.000000e+00
+-dcountfn		
+-example	no	no
+-fullvar	no	no
+-help		no	no
+-inmeanfn		
+-inmixwfn		
+-invarfn		
+-meanfn			/Users/air/Desktop/my_models/kz_model/model_parameters/kz_model.ci_cont/means
+-mixwfn			/Users/air/Desktop/my_models/kz_model/model_parameters/kz_model.ci_cont/mixture_weights
+-mmie		no	no
+-oaccumdir		
+-regmatfn		
+-tiedvar	no	no
+-tmatfn			/Users/air/Desktop/my_models/kz_model/model_parameters/kz_model.ci_cont/transition_matrices
+-varfn			/Users/air/Desktop/my_models/kz_model/model_parameters/kz_model.ci_cont/variances
+
+INFO: main.c(207): Reading and accumulating counts from /Users/air/Desktop/my_models/kz_model/bwaccumdir/kz_model_buff_1
+INFO: s3mixw_io.c(117): Read /Users/air/Desktop/my_models/kz_model/bwaccumdir/kz_model_buff_1/mixw_counts [99x1x1 array]
+INFO: s3tmat_io.c(118): Read /Users/air/Desktop/my_models/kz_model/bwaccumdir/kz_model_buff_1/tmat_counts [33x3x4 array]
+INFO: s3gau_io.c(386): Read /Users/air/Desktop/my_models/kz_model/bwaccumdir/kz_model_buff_1/gauden_counts with means with vars (2pass) [99x1x1 vector arrays]
+INFO: main.c(321): -2passvar yes
+INFO: main.c(391): Normalizing mean for n_mgau= 99, n_stream= 1, n_density= 1
+INFO: main.c(414): Normalizing var
+INFO: s3mixw_io.c(233): Wrote /Users/air/Desktop/my_models/kz_model/model_parameters/kz_model.ci_cont/mixture_weights [99x1x1 array]
+INFO: s3tmat_io.c(176): Wrote /Users/air/Desktop/my_models/kz_model/model_parameters/kz_model.ci_cont/transition_matrices [33x3x4 array]
+INFO: s3gau_io.c(228): Wrote /Users/air/Desktop/my_models/kz_model/model_parameters/kz_model.ci_cont/means [99x1x1 array]
+INFO: s3gau_io.c(228): Wrote /Users/air/Desktop/my_models/kz_model/model_parameters/kz_model.ci_cont/variances [99x1x1 array]
+Fri Feb 22 21:02:07 2019
+Current Overall Likelihood Per Frame = -143.989686765482
+Convergence ratio = 0.0969444044711452
+Likelihoods have converged! Baum Welch training completed!
+******************************TRAINING COMPLETE*************************
+Fri Feb 22 21:02:07 2019

@@ -1,0 +1,541 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="REFRESH" content="60">
+<title>kz_model</title>
+<style type="text/css">
+body {
+ background: #f0f0f5;
+}
+p,span {
+ font-family: monospace;
+}
+p {
+ margin-right: 6em;
+}
+p.phase {
+ font-weight: bold;
+ margin-bottom: 0;
+}
+p.result, p.WARNING, p.error {
+ margin-top: 0;
+ margin-bottom: 0;
+ margin-left: 5em;
+}
+span.status {
+ float: right;
+ margin-top: -1em;
+}
+.passed, .completed {
+ color: #00D000;
+}
+.WARNING, .warning {
+ color: #555500;
+}
+.FAILED, .error {
+ color: #DD0000;
+}
+</style>
+</head>
+<body>
+<h1 class="experiment">/Users/air/Desktop/my_models/kz_model</h1>
+<h2 class="hostname">Training kz_model on MacBook-Pro-KASYA.local</h2>
+<hr>
+<h3>MODULE: 000 Computing feature from audio files	(2019-02-22 20:29)</h3>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/000.comp_feat/kz_model.train-1-1.log">Log File</a></p><p class='error'>ERROR: This step had 1 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/000.comp_feat/kz_model.test-1-1.log">Log File</a></p><p class='error'>ERROR: This step had 1 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p>Feature extraction is done</p>
+<hr>
+<h3>MODULE: 00 verify training files	(2019-02-22 20:29)</h3>
+<p class='phase'>Phase 1: Checking to see if the dict and filler dict agrees with the phonelist file.</p>
+<p class='result'>Found 56 words using 33 phones</p>
+<p class='warning'>WARNING: This phone (c) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in the dictionary (/Users/air/Desktop/my_models/kz_model/etc/kz_model.dic)</p>
+<p class='warning'>WARNING: This phone (ch) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in the dictionary (/Users/air/Desktop/my_models/kz_model/etc/kz_model.dic)</p>
+<p class='warning'>WARNING: This phone (ea) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in the dictionary (/Users/air/Desktop/my_models/kz_model/etc/kz_model.dic)</p>
+<p class='warning'>WARNING: This phone (f) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in the dictionary (/Users/air/Desktop/my_models/kz_model/etc/kz_model.dic)</p>
+<p class='warning'>WARNING: This phone (fj) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in the dictionary (/Users/air/Desktop/my_models/kz_model/etc/kz_model.dic)</p>
+<p class='warning'>WARNING: This phone (g) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in the dictionary (/Users/air/Desktop/my_models/kz_model/etc/kz_model.dic)</p>
+<p class='warning'>WARNING: This phone (h) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in the dictionary (/Users/air/Desktop/my_models/kz_model/etc/kz_model.dic)</p>
+<p class='warning'>WARNING: This phone (ie) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in the dictionary (/Users/air/Desktop/my_models/kz_model/etc/kz_model.dic)</p>
+<p class='warning'>WARNING: This phone (k) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in the dictionary (/Users/air/Desktop/my_models/kz_model/etc/kz_model.dic)</p>
+<p class='warning'>WARNING: This phone (rj) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in the dictionary (/Users/air/Desktop/my_models/kz_model/etc/kz_model.dic)</p>
+<p class='warning'>WARNING: This phone (ue) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in the dictionary (/Users/air/Desktop/my_models/kz_model/etc/kz_model.dic)</p>
+<p class='warning'>WARNING: This phone (uo) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in the dictionary (/Users/air/Desktop/my_models/kz_model/etc/kz_model.dic)</p>
+<p class='warning'>WARNING: This phone (uy) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in the dictionary (/Users/air/Desktop/my_models/kz_model/etc/kz_model.dic)</p>
+<p class='warning'>WARNING: This phone (v) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in the dictionary (/Users/air/Desktop/my_models/kz_model/etc/kz_model.dic)</p>
+<p class='warning'>WARNING: This phone (vj) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in the dictionary (/Users/air/Desktop/my_models/kz_model/etc/kz_model.dic)</p>
+<p class='warning'>WARNING: This phone (zj) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in the dictionary (/Users/air/Desktop/my_models/kz_model/etc/kz_model.dic)</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 2: Checking to make sure there are not duplicate entries in the dictionary</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 3: Check general format for the fileids file; utterance length (must be positive); files exist</p>
+<p class='warning'>WARNING: Error in '/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.fileids': missing a newline at end of file</p>
+<p class='warning'>WARNING: Error in '/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.fileids', the feature file '/Users/air/Desktop/my_models/kz_model/feat/audio/107.mfc' does not exist, or is empty</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 4: Checking number of lines in the transcript file should match lines in fileids file</p>
+<p class='warning'>WARNING: Transcript file missing a newline at end of file</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 5: Determine amount of training data, see if n_tied_states seems reasonable.</p>
+<p class='result'>Estimated Total Hours Training: 0.0600108974358974</p>
+<p class='error'>ERROR: Not enough data for the training, we can only train CI models (set CFG_CD_TRAIN to "no")</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 6: Checking that all the words in the transcript are in the dictionary</p>
+<p class='result'>Words in dictionary: 53</p>
+<p class='result'>Words in filler dictionary: 3</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 72: audio/107 vs 108</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 73: audio/108 vs 109</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 74: audio/109 vs 110</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 75: audio/110 vs 111</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 76: audio/111 vs 112</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 77: audio/112 vs 113</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 78: audio/113 vs 114</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 79: audio/114 vs 115</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 80: audio/115 vs 116</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 81: audio/116 vs 117</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 82: audio/117 vs 118</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 83: audio/118 vs 119</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 84: audio/119 vs 120</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 85: audio/120 vs 121</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 86: audio/121 vs 122</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 87: audio/122 vs 123</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 88: audio/123 vs 124</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 89: audio/124 vs 125</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 90: audio/125 vs 126</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 91: audio/126 vs 127</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 92: audio/127 vs 128</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 93: audio/128 vs 129</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 94: audio/129 vs 130</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 95: audio/130 vs 131</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 96: audio/131 vs 132</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 97: audio/132 vs 133</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 98: audio/133 vs 134</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 99: audio/134 vs 135</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 7: Checking that all the phones in the transcript are in the phonelist, and all phones in the phonelist appear at least once</p>
+<p class='warning'>WARNING: This phone (c) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in any word in the transcription (/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.transcription)</p>
+<p class='warning'>WARNING: This phone (ch) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in any word in the transcription (/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.transcription)</p>
+<p class='warning'>WARNING: This phone (ea) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in any word in the transcription (/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.transcription)</p>
+<p class='warning'>WARNING: This phone (f) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in any word in the transcription (/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.transcription)</p>
+<p class='warning'>WARNING: This phone (fj) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in any word in the transcription (/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.transcription)</p>
+<p class='warning'>WARNING: This phone (g) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in any word in the transcription (/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.transcription)</p>
+<p class='warning'>WARNING: This phone (h) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in any word in the transcription (/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.transcription)</p>
+<p class='warning'>WARNING: This phone (ie) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in any word in the transcription (/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.transcription)</p>
+<p class='warning'>WARNING: This phone (k) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in any word in the transcription (/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.transcription)</p>
+<p class='warning'>WARNING: This phone (rj) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in any word in the transcription (/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.transcription)</p>
+<p class='warning'>WARNING: This phone (ue) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in any word in the transcription (/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.transcription)</p>
+<p class='warning'>WARNING: This phone (uo) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in any word in the transcription (/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.transcription)</p>
+<p class='warning'>WARNING: This phone (uy) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in any word in the transcription (/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.transcription)</p>
+<p class='warning'>WARNING: This phone (v) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in any word in the transcription (/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.transcription)</p>
+<p class='warning'>WARNING: This phone (vj) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in any word in the transcription (/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.transcription)</p>
+<p class='warning'>WARNING: This phone (zj) occurs in the phonelist (/Users/air/Desktop/my_models/kz_model/etc/kz_model.phone), but not in any word in the transcription (/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.transcription)</p>
+<span class='status FAILED'>FAILED</span>
+<hr>
+<h3>MODULE: 000 Computing feature from audio files	(2019-02-22 20:32)</h3>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/000.comp_feat/kz_model.train-1-1.log">Log File</a></p><p class='error'>ERROR: This step had 1 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/000.comp_feat/kz_model.test-1-1.log">Log File</a></p><p class='error'>ERROR: This step had 1 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p>Feature extraction is done</p>
+<hr>
+<h3>MODULE: 00 verify training files	(2019-02-22 20:32)</h3>
+<p class='phase'>Phase 1: Checking to see if the dict and filler dict agrees with the phonelist file.</p>
+<p class='result'>Found 56 words using 33 phones</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 2: Checking to make sure there are not duplicate entries in the dictionary</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 3: Check general format for the fileids file; utterance length (must be positive); files exist</p>
+<p class='warning'>WARNING: Error in '/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.fileids': missing a newline at end of file</p>
+<p class='warning'>WARNING: Error in '/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.fileids', the feature file '/Users/air/Desktop/my_models/kz_model/feat/audio/107.mfc' does not exist, or is empty</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 4: Checking number of lines in the transcript file should match lines in fileids file</p>
+<p class='warning'>WARNING: Transcript file missing a newline at end of file</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 5: Determine amount of training data, see if n_tied_states seems reasonable.</p>
+<p class='result'>Estimated Total Hours Training: 0.0600108974358974</p>
+<p class='error'>ERROR: Not enough data for the training, we can only train CI models (set CFG_CD_TRAIN to "no")</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 6: Checking that all the words in the transcript are in the dictionary</p>
+<p class='result'>Words in dictionary: 53</p>
+<p class='result'>Words in filler dictionary: 3</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 72: audio/107 vs 108</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 73: audio/108 vs 109</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 74: audio/109 vs 110</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 75: audio/110 vs 111</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 76: audio/111 vs 112</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 77: audio/112 vs 113</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 78: audio/113 vs 114</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 79: audio/114 vs 115</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 80: audio/115 vs 116</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 81: audio/116 vs 117</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 82: audio/117 vs 118</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 83: audio/118 vs 119</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 84: audio/119 vs 120</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 85: audio/120 vs 121</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 86: audio/121 vs 122</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 87: audio/122 vs 123</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 88: audio/123 vs 124</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 89: audio/124 vs 125</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 90: audio/125 vs 126</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 91: audio/126 vs 127</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 92: audio/127 vs 128</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 93: audio/128 vs 129</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 94: audio/129 vs 130</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 95: audio/130 vs 131</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 96: audio/131 vs 132</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 97: audio/132 vs 133</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 98: audio/133 vs 134</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 99: audio/134 vs 135</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 7: Checking that all the phones in the transcript are in the phonelist, and all phones in the phonelist appear at least once</p>
+<span class='status passed'>passed</span>
+<hr>
+<h3>MODULE: 000 Computing feature from audio files	(2019-02-22 20:32)</h3>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/000.comp_feat/kz_model.train-1-1.log">Log File</a></p><p class='error'>ERROR: This step had 1 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/000.comp_feat/kz_model.test-1-1.log">Log File</a></p><p class='error'>ERROR: This step had 1 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p>Feature extraction is done</p>
+<hr>
+<h3>MODULE: 00 verify training files	(2019-02-22 20:32)</h3>
+<p class='phase'>Phase 1: Checking to see if the dict and filler dict agrees with the phonelist file.</p>
+<p class='result'>Found 56 words using 33 phones</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 2: Checking to make sure there are not duplicate entries in the dictionary</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 3: Check general format for the fileids file; utterance length (must be positive); files exist</p>
+<p class='warning'>WARNING: Error in '/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.fileids': missing a newline at end of file</p>
+<p class='warning'>WARNING: Error in '/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.fileids', the feature file '/Users/air/Desktop/my_models/kz_model/feat/audio/107.mfc' does not exist, or is empty</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 4: Checking number of lines in the transcript file should match lines in fileids file</p>
+<p class='warning'>WARNING: Transcript file missing a newline at end of file</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 5: Determine amount of training data, see if n_tied_states seems reasonable.</p>
+<p class='result'>Estimated Total Hours Training: 0.0600108974358974</p>
+<p class='error'>ERROR: Not enough data for the training, we can only train CI models (set CFG_CD_TRAIN to "no")</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 6: Checking that all the words in the transcript are in the dictionary</p>
+<p class='result'>Words in dictionary: 53</p>
+<p class='result'>Words in filler dictionary: 3</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 72: audio/107 vs 108</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 73: audio/108 vs 109</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 74: audio/109 vs 110</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 75: audio/110 vs 111</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 76: audio/111 vs 112</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 77: audio/112 vs 113</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 78: audio/113 vs 114</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 79: audio/114 vs 115</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 80: audio/115 vs 116</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 81: audio/116 vs 117</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 82: audio/117 vs 118</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 83: audio/118 vs 119</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 84: audio/119 vs 120</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 85: audio/120 vs 121</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 86: audio/121 vs 122</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 87: audio/122 vs 123</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 88: audio/123 vs 124</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 89: audio/124 vs 125</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 90: audio/125 vs 126</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 91: audio/126 vs 127</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 92: audio/127 vs 128</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 93: audio/128 vs 129</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 94: audio/129 vs 130</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 95: audio/130 vs 131</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 96: audio/131 vs 132</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 97: audio/132 vs 133</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 98: audio/133 vs 134</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 99: audio/134 vs 135</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 7: Checking that all the phones in the transcript are in the phonelist, and all phones in the phonelist appear at least once</p>
+<span class='status passed'>passed</span>
+<hr>
+<h3>MODULE: 000 Computing feature from audio files	(2019-02-22 20:34)</h3>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/000.comp_feat/kz_model.train-1-1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/000.comp_feat/kz_model.test-1-1.log">Log File</a></p><span class='status completed'>completed</span>
+<p>Feature extraction is done</p>
+<hr>
+<h3>MODULE: 00 verify training files	(2019-02-22 20:34)</h3>
+<p class='phase'>Phase 1: Checking to see if the dict and filler dict agrees with the phonelist file.</p>
+<p class='result'>Found 56 words using 33 phones</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 2: Checking to make sure there are not duplicate entries in the dictionary</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 3: Check general format for the fileids file; utterance length (must be positive); files exist</p>
+<p class='warning'>WARNING: Error in '/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.fileids': missing a newline at end of file</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 4: Checking number of lines in the transcript file should match lines in fileids file</p>
+<p class='warning'>WARNING: Transcript file missing a newline at end of file</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 5: Determine amount of training data, see if n_tied_states seems reasonable.</p>
+<p class='result'>Estimated Total Hours Training: 0.0606611111111111</p>
+<p class='error'>ERROR: Not enough data for the training, we can only train CI models (set CFG_CD_TRAIN to "no")</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 6: Checking that all the words in the transcript are in the dictionary</p>
+<p class='result'>Words in dictionary: 53</p>
+<p class='result'>Words in filler dictionary: 3</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 72: audio/107 vs 108</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 73: audio/108 vs 109</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 74: audio/109 vs 110</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 75: audio/110 vs 111</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 76: audio/111 vs 112</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 77: audio/112 vs 113</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 78: audio/113 vs 114</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 79: audio/114 vs 115</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 80: audio/115 vs 116</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 81: audio/116 vs 117</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 82: audio/117 vs 118</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 83: audio/118 vs 119</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 84: audio/119 vs 120</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 85: audio/120 vs 121</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 86: audio/121 vs 122</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 87: audio/122 vs 123</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 88: audio/123 vs 124</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 89: audio/124 vs 125</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 90: audio/125 vs 126</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 91: audio/126 vs 127</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 92: audio/127 vs 128</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 93: audio/128 vs 129</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 94: audio/129 vs 130</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 95: audio/130 vs 131</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 96: audio/131 vs 132</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 97: audio/132 vs 133</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 98: audio/133 vs 134</p>
+<p class='warning'>WARNING: Utterance ID mismatch on line 99: audio/134 vs 135</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 7: Checking that all the phones in the transcript are in the phonelist, and all phones in the phonelist appear at least once</p>
+<span class='status passed'>passed</span>
+<hr>
+<h3>MODULE: 000 Computing feature from audio files	(2019-02-22 20:35)</h3>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/000.comp_feat/kz_model.train-1-1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/000.comp_feat/kz_model.test-1-1.log">Log File</a></p><span class='status completed'>completed</span>
+<p>Feature extraction is done</p>
+<hr>
+<h3>MODULE: 00 verify training files	(2019-02-22 20:35)</h3>
+<p class='phase'>Phase 1: Checking to see if the dict and filler dict agrees with the phonelist file.</p>
+<p class='result'>Found 56 words using 33 phones</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 2: Checking to make sure there are not duplicate entries in the dictionary</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 3: Check general format for the fileids file; utterance length (must be positive); files exist</p>
+<p class='warning'>WARNING: Error in '/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.fileids': missing a newline at end of file</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 4: Checking number of lines in the transcript file should match lines in fileids file</p>
+<p class='warning'>WARNING: Transcript file missing a newline at end of file</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 5: Determine amount of training data, see if n_tied_states seems reasonable.</p>
+<p class='result'>Estimated Total Hours Training: 0.0606611111111111</p>
+<p class='error'>ERROR: Not enough data for the training, we can only train CI models (set CFG_CD_TRAIN to "no")</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 6: Checking that all the words in the transcript are in the dictionary</p>
+<p class='result'>Words in dictionary: 53</p>
+<p class='result'>Words in filler dictionary: 3</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 7: Checking that all the phones in the transcript are in the phonelist, and all phones in the phonelist appear at least once</p>
+<span class='status passed'>passed</span>
+<hr>
+<h3>MODULE: 000 Computing feature from audio files	(2019-02-22 20:37)</h3>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/000.comp_feat/kz_model.train-1-1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/000.comp_feat/kz_model.test-1-1.log">Log File</a></p><span class='status completed'>completed</span>
+<p>Feature extraction is done</p>
+<hr>
+<h3>MODULE: 00 verify training files	(2019-02-22 20:37)</h3>
+<p class='phase'>Phase 1: Checking to see if the dict and filler dict agrees with the phonelist file.</p>
+<p class='result'>Found 56 words using 33 phones</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 2: Checking to make sure there are not duplicate entries in the dictionary</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 3: Check general format for the fileids file; utterance length (must be positive); files exist</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 4: Checking number of lines in the transcript file should match lines in fileids file</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 5: Determine amount of training data, see if n_tied_states seems reasonable.</p>
+<p class='result'>Estimated Total Hours Training: 0.0606611111111111</p>
+<p class='error'>ERROR: Not enough data for the training, we can only train CI models (set CFG_CD_TRAIN to "no")</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 6: Checking that all the words in the transcript are in the dictionary</p>
+<p class='result'>Words in dictionary: 53</p>
+<p class='result'>Words in filler dictionary: 3</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 7: Checking that all the phones in the transcript are in the phonelist, and all phones in the phonelist appear at least once</p>
+<span class='status passed'>passed</span>
+<hr>
+<h3>MODULE: 000 Computing feature from audio files	(2019-02-22 20:57)</h3>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/000.comp_feat/kz_model.train-1-1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/000.comp_feat/kz_model.test-1-1.log">Log File</a></p><span class='status completed'>completed</span>
+<p>Feature extraction is done</p>
+<hr>
+<h3>MODULE: 00 verify training files	(2019-02-22 20:57)</h3>
+<p class='phase'>Phase 1: Checking to see if the dict and filler dict agrees with the phonelist file.</p>
+<p class='result'>Found 56 words using 33 phones</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 2: Checking to make sure there are not duplicate entries in the dictionary</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 3: Check general format for the fileids file; utterance length (must be positive); files exist</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 4: Checking number of lines in the transcript file should match lines in fileids file</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 5: Determine amount of training data, see if n_tied_states seems reasonable.</p>
+<p class='result'>Estimated Total Hours Training: 0.0606611111111111</p>
+<p class='error'>ERROR: Not enough data for the training, we can only train CI models (set CFG_CD_TRAIN to "no")</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 6: Checking that all the words in the transcript are in the dictionary</p>
+<p class='result'>Words in dictionary: 53</p>
+<p class='result'>Words in filler dictionary: 3</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 7: Checking that all the phones in the transcript are in the phonelist, and all phones in the phonelist appear at least once</p>
+<span class='status passed'>passed</span>
+<hr>
+<h3>MODULE: 000 Computing feature from audio files	(2019-02-22 21:02)</h3>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/000.comp_feat/kz_model.train-1-1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/000.comp_feat/kz_model.test-1-1.log">Log File</a></p><span class='status completed'>completed</span>
+<p>Feature extraction is done</p>
+<hr>
+<h3>MODULE: 00 verify training files	(2019-02-22 21:02)</h3>
+<p class='phase'>Phase 1: Checking to see if the dict and filler dict agrees with the phonelist file.</p>
+<p class='result'>Found 56 words using 33 phones</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 2: Checking to make sure there are not duplicate entries in the dictionary</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 3: Check general format for the fileids file; utterance length (must be positive); files exist</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 4: Checking number of lines in the transcript file should match lines in fileids file</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 5: Determine amount of training data, see if n_tied_states seems reasonable.</p>
+<p class='result'>Estimated Total Hours Training: 0.0606611111111111</p>
+<p class='result'>This is a small amount of data, no comment at this time</p>
+<span class='status WARNING'>WARNING</span>
+<p class='phase'>Phase 6: Checking that all the words in the transcript are in the dictionary</p>
+<p class='result'>Words in dictionary: 53</p>
+<p class='result'>Words in filler dictionary: 3</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 7: Checking that all the phones in the transcript are in the phonelist, and all phones in the phonelist appear at least once</p>
+<span class='status passed'>passed</span>
+<hr>
+<h3>MODULE: 0000 train grapheme-to-phoneme model	(2019-02-22 21:02)</h3>
+<p>Skipped (set $CFG_G2P_MODEL = 'yes' to enable)</p>
+<hr>
+<h3>MODULE: 01 Train LDA transformation	(2019-02-22 21:02)</h3>
+<p>Skipped (set $CFG_LDA_MLLT = 'yes' to enable)</p>
+<hr>
+<h3>MODULE: 02 Train MLLT transformation	(2019-02-22 21:02)</h3>
+<p>Skipped (set $CFG_LDA_MLLT = 'yes' to enable)</p>
+<hr>
+<h3>MODULE: 05 Vector Quantization	(2019-02-22 21:02)</h3>
+<p>Skipped for continuous models</p>
+<hr>
+<h3>MODULE: 10 Training Context Independent models for forced alignment and VTLN	(2019-02-22 21:02)</h3>
+<p>Skipped:  $ST::CFG_FORCEDALIGN set to 'no' in sphinx_train.cfg</p>
+<p>Skipped:  $ST::CFG_VTLN set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 11 Force-aligning transcripts	(2019-02-22 21:02)</h3>
+<p>Skipped:  $ST::CFG_FORCEDALIGN set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 12 Force-aligning data for VTLN	(2019-02-22 21:02)</h3>
+<p>Skipped:  $ST::CFG_VTLN set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 20 Training Context Independent models	(2019-02-22 21:02)</h3>
+<p class='phase'>Phase 1: Cleaning up directories:</p>
+<span class='progress'>	accumulator...</span>
+<span class='progress'>logs...</span>
+<span class='progress'>qmanager...</span>
+<span class='progress'>models...
+</span>
+<span class='status completed'>completed</span>
+<p class='phase'>Phase 2: Flat initialize</p>
+<p class='result'>mk_mdef_gen <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/20.ci_hmm/kz_model.make_ci_mdef_fromphonelist.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>mk_flat <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/20.ci_hmm/kz_model.makeflat_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>init_gau <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/20.ci_hmm/kz_model.initmean_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>norm <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/20.ci_hmm/kz_model.normmean_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>init_gau <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/20.ci_hmm/kz_model.initvar_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>norm <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/20.ci_hmm/kz_model.normvar_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>cp_parm <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/20.ci_hmm/kz_model.cpmean_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>cp_parm <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/20.ci_hmm/kz_model.cpvar_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 3: Forward-Backward</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 1 (1 of 1)</p>
+<p class='result'>bw <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/20.ci_hmm/kz_model.1.1-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/20.ci_hmm/kz_model.1.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -151.003663339134</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 2 (1 of 1)</p>
+<p class='result'>bw <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/20.ci_hmm/kz_model.1.2-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/20.ci_hmm/kz_model.1.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -148.604267790091</p>
+<p class='result'>Convergence Ratio = 2.39939554904333</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 3 (1 of 1)</p>
+<p class='result'>bw <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/20.ci_hmm/kz_model.1.3-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/20.ci_hmm/kz_model.1.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -146.285694386405</p>
+<p class='result'>Convergence Ratio = 2.3185734036862</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 4 (1 of 1)</p>
+<p class='result'>bw <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/20.ci_hmm/kz_model.1.4-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 10 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/20.ci_hmm/kz_model.1.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -145.2105164231</p>
+<p class='result'>Convergence Ratio = 1.07517796330458</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 5 (1 of 1)</p>
+<p class='result'>bw <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/20.ci_hmm/kz_model.1.5-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 16 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 5</p>
+<p class='result'>norm <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/20.ci_hmm/kz_model.1.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -144.375065956732</p>
+<p class='result'>Convergence Ratio = 0.835450466367604</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 6 (1 of 1)</p>
+<p class='result'>bw <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/20.ci_hmm/kz_model.1.6-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 16 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 6</p>
+<p class='result'>norm <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/20.ci_hmm/kz_model.1.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -144.086631169953</p>
+<p class='result'>Convergence Ratio = 0.288434786779476</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 7 (1 of 1)</p>
+<p class='result'>bw <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/20.ci_hmm/kz_model.1.7-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 16 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 7</p>
+<p class='result'>norm <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/20.ci_hmm/kz_model.1.7.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.989686765482</p>
+<p class='result'>Training completed after 7 iterations</p>
+<p>Skipped (set $CFG_CD_TRAIN = 'yes' to enable)</p>
+<p>Skipped (set $CFG_CD_TRAIN = 'yes' to enable)</p>
+<p>Skipped (set $CFG_CD_TRAIN = 'yes' to enable)</p>
+<p>Skipped (set $CFG_CD_TRAIN = 'yes' to enable)</p>
+<hr>
+<h3>MODULE: 60 Lattice Generation	(2019-02-22 21:02)</h3>
+<p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 61 Lattice Pruning	(2019-02-22 21:02)</h3>
+<p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 62 Lattice Format Conversion	(2019-02-22 21:02)</h3>
+<p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 65 MMIE Training	(2019-02-22 21:02)</h3>
+<p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 90 deleted interpolation	(2019-02-22 21:02)</h3>
+<p>Skipped for continuous models</p>
+<hr>
+<h3>MODULE: DECODE Decoding using models previously trained	(2019-02-22 21:02)</h3>
+<p class='result'>Decoding 100 segments starting at 0 (part 1 of 1) </p>
+<p class='result'>pocketsphinx_batch <a href="file:///Users/air/Desktop/my_models/kz_model/logdir/decode/kz_model-1-1.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p>        Aligning results to find error rate</p>

@@ -1,0 +1,160 @@
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-alpha			0.97		9.700000e-01
+-argfile				
+-blocksize		2048		2048
+-build_outdirs		yes		yes
+-c					/Users/air/Desktop/my_models/kz_model/etc/kz_model_train.fileids
+-cep2spec		no		no
+-di					/Users/air/Desktop/my_models/kz_model/wav
+-dither			no		no
+-do					/Users/air/Desktop/my_models/kz_model/feat
+-doublebw		no		no
+-ei					wav
+-eo					mfc
+-example		no		no
+-frate			100		100
+-help			no		no
+-i					
+-input_endian		little		little
+-lifter			0		22
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-mach_endian		little		little
+-mswav			no		yes
+-ncep			13		13
+-nchans			1		1
+-nfft			512		512
+-nfilt			40		25
+-nist			no		no
+-npart			0		1
+-nskip			0		0
+-o					
+-ofmt			sphinx		sphinx
+-part			0		1
+-raw			no		no
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-runlen			-1		-1
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-smoothspec		no		no
+-spec2cep		no		no
+-sph2pipe		no		no
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-whichchan		0		0
+-wlen			0.025625	2.562500e-02
+
+INFO: sphinx_fe.c(967): Processing all remaining utterances at position 0
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/1.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/1.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/2.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/2.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/3.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/3.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/4.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/4.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/5.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/5.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/6.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/6.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/7.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/7.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/8.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/8.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/9.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/9.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/10.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/10.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/11.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/11.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/12.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/12.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/13.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/13.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/14.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/14.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/15.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/15.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/16.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/16.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/17.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/17.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/18.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/18.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/19.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/19.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/20.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/20.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/21.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/21.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/22.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/22.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/23.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/23.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/24.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/24.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/25.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/25.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/26.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/26.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/27.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/27.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/28.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/28.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/29.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/29.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/30.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/30.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/31.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/31.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/32.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/32.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/33.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/33.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/34.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/34.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/35.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/35.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/36.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/36.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/37.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/37.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/38.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/38.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/39.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/39.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/40.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/40.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/41.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/41.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/42.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/42.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/43.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/43.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/44.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/44.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/45.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/45.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/46.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/46.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/47.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/47.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/48.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/48.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/49.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/49.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/50.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/50.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/51.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/51.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/52.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/52.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/53.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/53.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/54.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/54.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/55.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/55.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/56.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/56.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/57.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/57.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/58.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/58.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/59.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/59.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/60.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/60.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/61.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/61.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/62.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/62.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/63.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/63.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/64.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/64.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/100.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/100.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/101.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/101.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/102.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/102.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/103.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/103.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/104.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/104.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/105.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/105.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/106.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/106.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/107.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/107.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/108.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/108.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/109.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/109.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/110.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/110.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/111.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/111.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/112.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/112.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/113.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/113.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/114.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/114.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/115.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/115.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/116.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/116.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/117.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/117.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/118.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/118.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/119.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/119.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/120.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/120.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/121.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/121.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/122.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/122.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/123.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/123.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/124.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/124.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/125.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/125.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/126.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/126.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/127.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/127.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/128.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/128.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/129.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/129.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/130.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/130.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/131.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/131.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/132.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/132.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/133.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/133.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/134.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/134.mfc
+INFO: sphinx_fe.c(787): Converting /Users/air/Desktop/my_models/kz_model/wav/audio/135.wav to /Users/air/Desktop/my_models/kz_model/feat/audio/135.mfc
+Fri Feb 22 21:02:05 2019
