@@ -39,11 +39,13 @@ public class RecognizerService {
         stream.skip(44);
         String sentences = "";
         while ((result = recognizer.getResult()) != null) {
-            sentences += result.getHypothesis();
+            if(!result.getHypothesis().equalsIgnoreCase("<sil>")){
+                sentences += result.getHypothesis() + " ";
+            }
         }
         recognizer.stopRecognition();
 
-        return "{ \"message\" : \"" + (sentences.length() > 0 ? sentences : "not recognized") + "\"  , \"error\" : false} ";
+        return sentences;
     }
 
 }

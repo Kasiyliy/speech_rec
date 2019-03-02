@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -23,7 +24,8 @@ import java.sql.PreparedStatement;
 @CrossOrigin("*")
 @RequestMapping("api")
 public class MainController {
-    private static String MIME_TYPE = "audio/wave";
+    private static String MIME_TYPE1 = "audio/wave";
+    private static String MIME_TYPE2 = "audio/x-wav";
 
     @Autowired
     private QuestionService questionService;
@@ -33,9 +35,9 @@ public class MainController {
 
     @PostMapping("/uploadFile")
     public String uploadFile(@RequestParam("file") MultipartFile file) {
-        String files = file.getContentType();
-        if (!files.equals(MIME_TYPE)) {
-            return "{ \"message\" : \"mime type error\" , \"error\" : true  }";
+        String error = checkForMimeType(file);
+        if(error.length() > 0){
+            return error;
         }
         String result = "";
         try {
@@ -50,12 +52,25 @@ public class MainController {
         return result;
     }
 
+    public String checkForMimeType(MultipartFile file){
+//        String files = file.getContentType();
+//        if (!files.equals(MIME_TYPE1) || !files.equals(MIME_TYPE2)) {
+//            return "{ \"message\" : \"mime type error\" , \"error\" : true  }";
+//        }else{
+//            return "";
+//        }
+
+        return "";
+    }
+
     @PostMapping("/recognize")
     public String recognize(@RequestParam("file") MultipartFile file, @RequestParam(value = "q_code") String qCode) {
-        String files = file.getContentType();
-        if (!files.equals(MIME_TYPE)) {
-            return "{ \"message\" : \"mime type error\" , \"error\" : true  }";
+
+        String error = checkForMimeType(file);
+        if(error.length() > 0){
+            return error;
         }
+
         String result = "";
         try {
             result += recognizerService.recognize(file);
@@ -63,19 +78,23 @@ public class MainController {
             e.printStackTrace();
         }
 
-        if (result.length() == 0) {
-            result += "{\"message\" : \"not recognized\"  ,\"error\" : true }";
-        } else {
-            Questions question = questionService.getByCode(qCode);
+        String result2 = "";
+
+        Questions question = questionService.getByCode(qCode);
+        result = result.trim();
+        if(question!=null){
             if (question.getAnswer().equalsIgnoreCase(result)) {
-                result += "{\"message\" : \"recognized\"  ,\"error\" : false, \"points\" : " + question.getPoints() + " }";
+                result2 += "{\"message\" : \"recognized\"  ,\"error\" : false, \"points\" : " + question.getPoints() + " , \"text\": \""+result+"\" , \"text_to_be_recognized\" : \""+question.getAnswer()+"\" }";
             } else {
-                result += "{\"message\" : \"fail\"  ,\"error\" : false, \"points\" : " + 0 + " }";
+                result2 += "{\"message\" : \"fail\"  ,\"error\" : false, \"points\" : " + 0 + " , \"text\": \""+result+"\" , \"text_to_be_recognized\" : \""+question.getAnswer()+"\" }";
             }
+        }else{
+            result2 += "{\"message\" : \"fail\"  ,\"error\" : true, \"points\" : " + 0 + " , \"text\": \""+result+"\" }";
         }
 
 
-        return result;
+
+        return result2;
     }
 
     @PostMapping("/verify")
