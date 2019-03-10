@@ -1,5 +1,8 @@
 package kz.halyq.speech_rec.rest.controllers;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import kz.halyq.speech_rec.models.Questions;
 import kz.halyq.speech_rec.services.QuestionService;
 import kz.halyq.speech_rec.services.RecognizerService;
@@ -23,7 +26,8 @@ import java.sql.PreparedStatement;
 @RestController
 @CrossOrigin("*")
 @RequestMapping("api")
-public class MainController {
+@Api(description = "Точка входа для распознования")
+public class MainRestController {
     private static String MIME_TYPE1 = "audio/wave";
     private static String MIME_TYPE2 = "audio/x-wav";
 
@@ -34,7 +38,8 @@ public class MainController {
     private RecognizerService recognizerService;
 
     @PostMapping("/uploadFile")
-    public String uploadFile(@RequestParam("file") MultipartFile file) {
+    @ApiOperation("Распознование текста по файлу")
+    public String uploadFile(@ApiParam("Файл для распознования. Обязателен.") @RequestParam("file") MultipartFile file) {
         String error = checkForMimeType(file);
         if(error.length() > 0){
             return error;
@@ -64,7 +69,9 @@ public class MainController {
     }
 
     @PostMapping("/recognize")
-    public String recognize(@RequestParam("file") MultipartFile file, @RequestParam(value = "q_code") String qCode) {
+    @ApiOperation("Распознование текста по файлу и проверка уникальному коду")
+    public String recognize(@ApiParam("Файл для распознования. Обязателен.") @RequestParam("file") MultipartFile file,
+                            @ApiParam("Уникальный код вопроса (q_code). Обязателен.") @RequestParam(value = "q_code") String qCode) {
 
         String error = checkForMimeType(file);
         if(error.length() > 0){
@@ -98,41 +105,22 @@ public class MainController {
     }
 
     @PostMapping("/verify")
-    public String verify(@RequestParam(value = "q_id") Long qId, @RequestParam(value = "number") Long number) {
+    @ApiOperation("Валидация")
+    public String verify(@ApiParam("Уникальный ID вопроса. Обязателен.")  @RequestParam(value = "q_id") Long qId,
+                         @ApiParam("Номер вопроса. Обязателен.")  @RequestParam(value = "number") Long number) {
         String result = "";
         result += "{\"message\" : \"start to recognize\"  ,\"error\" : false }";
         return result;
     }
 
     @PostMapping("/questions/by/code")
-    public ResponseEntity getByCode(@RequestParam(value = "q_code") String qCode) {
+    @ApiOperation("Получить вопрос по уникальному коду")
+    public ResponseEntity getByCode(@ApiParam("Уникальный код вопроса. Обязателен.")  @RequestParam(value = "q_code") String qCode) {
         Questions question = questionService.getByCode(qCode);
         if (question == null) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(MessageUtils.getMessageJSON(HttpStatus.NOT_FOUND.getReasonPhrase()));
         }
         return ResponseEntity.status(HttpStatus.FOUND).body(question);
-    }
-
-    @PostMapping("set_questions")
-    public String setQuestions(@RequestParam("code") String code, @RequestParam("answer") String answer,
-                               @RequestParam("points") Integer points) {
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/speech",
-                    "root", "sbeezzs02");
-
-            String sql = "insert into questions (code, answer, points)\n" +
-                    "values (?, ?, ?)";
-
-            PreparedStatement preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setString(1, code);
-            preparedStatement.setString(2, answer);
-            preparedStatement.setInt(3, points);
-            preparedStatement.executeUpdate();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return "{ \"message\" : \"successful\" , \"error\" : false  }";
     }
 
 }
