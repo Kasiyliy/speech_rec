@@ -39,12 +39,10 @@ public class RecognizerService {
         stream.skip(44);
         String sentences = "";
         while ((result = recognizer.getResult()) != null) {
-            if(!result.getHypothesis().equalsIgnoreCase("<sil>")){
                 sentences += result.getHypothesis() + " ";
-            }
         }
         recognizer.stopRecognition();
-
+        sentences = sentences.trim();
         return sentences;
     }
 

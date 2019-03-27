@@ -54,6 +54,7 @@ public class MainRestController {
         if (result.length() == 0) {
             result += "{\"message\" : \"not recognized\"  ,\"error\" : true }";
         }
+        System.out.println(result);
         return result;
     }
 
@@ -98,8 +99,7 @@ public class MainRestController {
         }else{
             result2 += "{\"message\" : \"fail\"  ,\"error\" : true, \"points\" : " + 0 + " , \"text\": \""+result+"\" }";
         }
-
-
+        System.out.println(result2);
 
         return result2;
     }
