@@ -1,0 +1,389 @@
+        INFO: pocketsphinx.c(153): Parsed model-specific feature parameters from /home/lex/cmu_sphinx/model/model_parameters/model.ci_cont/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		yes		yes
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-80
+-bestpath		yes		yes
+-bestpathlw		9.5		1.000000e+01
+-ceplen			13		13
+-cmn			live		batch
+-cmninit		40,3,-1		40,3,-1
+-compallsen		no		no
+-dict					/home/lex/cmu_sphinx/model/etc/model.dic
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-80
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		1.000000e+01
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		1.000000e-40
+-fwdtree		yes		yes
+-hmm					/home/lex/cmu_sphinx/model/model_parameters/model.ci_cont
+-input_endian		little		little
+-jsgf					
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1e-30		1.000000e-30
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					/home/lex/cmu_sphinx/model/etc/model.lm
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-80
+-lponlybeam		7e-29		1.000000e-80
+-lw			6.5		1.000000e+01
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-80
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		3.0		3.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		1.000000e-40
+-wip			0.65		2.000000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: mdef.c(518): Reading model definition: /home/lex/cmu_sphinx/model/model_parameters/model.ci_cont/mdef
+INFO: bin_mdef.c(181): Allocating 52 * 8 bytes (0 KiB) for CD tree
+INFO: tmat.c(149): Reading HMM transition probability matrices: /home/lex/cmu_sphinx/model/model_parameters/model.ci_cont/transition_matrices
+INFO: acmod.c(113): Attempting to use PTM computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/lex/cmu_sphinx/model/model_parameters/model.ci_cont/means
+INFO: ms_gauden.c(242): 36 codebook, 1 feature, size: 
+INFO: ms_gauden.c(244):  1x39
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/lex/cmu_sphinx/model/model_parameters/model.ci_cont/variances
+INFO: ms_gauden.c(242): 36 codebook, 1 feature, size: 
+INFO: ms_gauden.c(244):  1x39
+INFO: ms_gauden.c(304): 0 variance values floored
+INFO: ptm_mgau.c(807): Number of codebooks doesn't match number of ciphones, doesn't look like PTM: 36 != 12
+INFO: acmod.c(115): Attempting to use semi-continuous computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/lex/cmu_sphinx/model/model_parameters/model.ci_cont/means
+INFO: ms_gauden.c(242): 36 codebook, 1 feature, size: 
+INFO: ms_gauden.c(244):  1x39
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/lex/cmu_sphinx/model/model_parameters/model.ci_cont/variances
+INFO: ms_gauden.c(242): 36 codebook, 1 feature, size: 
+INFO: ms_gauden.c(244):  1x39
+INFO: ms_gauden.c(304): 0 variance values floored
+INFO: acmod.c(117): Falling back to general multi-stream GMM computation
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/lex/cmu_sphinx/model/model_parameters/model.ci_cont/means
+INFO: ms_gauden.c(242): 36 codebook, 1 feature, size: 
+INFO: ms_gauden.c(244):  1x39
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/lex/cmu_sphinx/model/model_parameters/model.ci_cont/variances
+INFO: ms_gauden.c(242): 36 codebook, 1 feature, size: 
+INFO: ms_gauden.c(244):  1x39
+INFO: ms_gauden.c(304): 0 variance values floored
+INFO: ms_senone.c(149): Reading senone mixture weights: /home/lex/cmu_sphinx/model/model_parameters/model.ci_cont/mixture_weights
+INFO: ms_senone.c(200): Truncating senone logs3(pdf) values by 10 bits
+INFO: ms_senone.c(207): Not transposing mixture weights in memory
+INFO: ms_senone.c(268): Read mixture weights for 36 senones: 1 features x 1 codewords
+INFO: ms_senone.c(320): Mapping senones to individual codebooks
+INFO: ms_mgau.c(144): The value of topn: 4
+WARN: "ms_mgau.c", line 148: -topn argument (4) invalid or > #density codewords (1); set to latter
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 4102 * 32 bytes (128 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: /home/lex/cmu_sphinx/model/etc/model.dic
+INFO: dict.c(213): Dictionary size 3, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(336): 3 words read
+INFO: dict.c(358): Reading filler dictionary: /home/lex/cmu_sphinx/model/model_parameters/model.ci_cont/noisedict
+INFO: dict.c(213): Dictionary size 6, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 3 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 12^3 * 2 bytes (3 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 3552 bytes (3 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 3552 bytes (3 KiB) for single-phone word triphones
+INFO: ngram_model_trie.c(354): Trying to read LM in trie binary format
+INFO: ngram_model_trie.c(365): Header doesn't match
+INFO: ngram_model_trie.c(177): Trying to read LM in arpa format
+INFO: ngram_model_trie.c(193): LM of order 3
+INFO: ngram_model_trie.c(195): #1-grams: 5
+INFO: ngram_model_trie.c(195): #2-grams: 6
+INFO: ngram_model_trie.c(195): #3-grams: 3
+INFO: lm_trie.c(474): Training quantizer
+INFO: lm_trie.c(482): Building LM trie
+INFO: ngram_search_fwdtree.c(74): Initializing search tree
+INFO: ngram_search_fwdtree.c(101): 3 unique initial diphones
+INFO: ngram_search_fwdtree.c(186): Creating search channels
+INFO: ngram_search_fwdtree.c(323): Max nonroot chan increased to 134
+INFO: ngram_search_fwdtree.c(333): Created 2 root, 6 non-root channels, 3 single-phone words
+INFO: ngram_search_fwdflat.c(157): fwdflat: min_ef_width = 4, max_sf_win = 25
+INFO: batch.c(815): Decoding 'audio/1'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/1.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/2'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/2.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/3'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/3.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/4'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/4.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/5'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/5.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/6'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/6.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/7'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/7.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/8'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/8.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/9'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/9.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/10'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/10.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/11'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/11.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/12'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/12.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/13'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/13.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/14'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/14.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/15'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/15.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/16'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/16.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/17'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/17.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/18'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/18.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/19'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/19.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/20'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/20.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/21'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/21.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/22'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/22.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/23'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/23.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/24'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/24.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/25'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/25.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/26'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/26.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/27'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/27.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/28'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/28.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/29'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/29.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/30'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/30.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/31'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/31.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/32'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/32.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/33'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/33.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/34'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/34.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/35'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/35.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/36'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/36.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/37'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/37.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/38'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/38.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/39'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/39.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/40'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/40.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/41'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/41.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/42'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/42.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/43'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/43.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/44'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/44.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/45'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/45.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/46'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/46.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/47'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/47.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/48'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/48.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/49'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/49.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/50'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/50.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/51'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/51.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/52'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/52.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/53'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/53.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/54'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/54.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/55'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/55.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/56'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/56.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/57'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/57.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/58'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/58.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/59'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/59.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/60'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/60.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/61'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/61.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/62'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/62.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/63'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/63.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/64'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/64.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/100'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/100.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/101'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/101.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/102'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/102.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/103'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/103.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/104'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/104.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/105'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/105.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/106'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/106.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/107'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/107.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/108'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/108.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/109'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/109.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/110'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/110.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/111'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/111.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/112'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/112.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/113'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/113.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/114'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/114.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/115'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/115.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/116'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/116.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/117'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/117.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/118'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/118.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/119'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/119.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/120'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/120.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/121'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/121.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/122'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/122.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/123'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/123.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/124'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/124.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/125'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/125.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/126'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/126.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/127'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/127.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/128'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/128.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/129'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/129.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/130'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/130.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/131'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/131.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/132'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/132.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/133'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/133.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/134'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/134.mfc: No such file or directory
+INFO: batch.c(815): Decoding 'audio/135'
+ERROR: "batch.c", line 457: Failed to open /home/lex/cmu_sphinx/model/feat/audio/135.mfc: No such file or directory
+INFO: batch.c(867): TOTAL 0.00 seconds speech, 0.00 seconds CPU, 0.00 seconds wall
+INFO: batch.c(869): AVERAGE -nan xRT (CPU), -nan xRT (elapsed)
+INFO: ngram_search_fwdtree.c(429): TOTAL fwdtree 0.00 CPU -nan xRT
+INFO: ngram_search_fwdtree.c(432): TOTAL fwdtree 0.00 wall -nan xRT
+INFO: ngram_search_fwdflat.c(176): TOTAL fwdflat 0.00 CPU -nan xRT
+INFO: ngram_search_fwdflat.c(179): TOTAL fwdflat 0.00 wall -nan xRT
+INFO: ngram_search.c(303): TOTAL bestpath 0.00 CPU -nan xRT
+INFO: ngram_search.c(306): TOTAL bestpath 0.00 wall -nan xRT
+Mon Mar 18 19:35:27 2019
