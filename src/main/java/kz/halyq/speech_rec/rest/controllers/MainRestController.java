@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -95,6 +96,12 @@ public class MainRestController {
                 result2 += "{\"message\" : \"recognized\"  ,\"error\" : false, \"points\" : " + question.getPoints() + " , \"text\": \""+result+"\" , \"text_to_be_recognized\" : \""+question.getAnswer()+"\" }";
             } else {
                 result2 += "{\"message\" : \"fail\"  ,\"error\" : false, \"points\" : " + 0 + " , \"text\": \""+result+"\" , \"text_to_be_recognized\" : \""+question.getAnswer()+"\" }";
+                File uploadedFile = new File("/tmp/files/"+file.getOriginalFilename());
+                try {
+                    uploadedFile.createNewFile();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }else{
             result2 += "{\"message\" : \"fail\"  ,\"error\" : true, \"points\" : " + 0 + " , \"text\": \""+result+"\" }";
